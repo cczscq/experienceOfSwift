@@ -2,9 +2,9 @@
 
 
 
-## StoryBroad
+## storyboard
 
-在storyBroad中的ViewController中创建UIPickView,同时绑定到ViewController中
+在storyboard中的ViewController中创建UIPickView,同时绑定到ViewController中
 
 
 
@@ -18,14 +18,14 @@
 
 ``` swift
 extension ViewController : UIPickerViewDelegate {
-    
+
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
         return beautys[row];
     }
 }
 ```
 
-## 
+##  
 
 ## 实现UIPickerViewDataSource	
 
@@ -35,7 +35,7 @@ extension ViewController : UIPickerViewDataSource {
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1;
     }
-    
+
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return beautys.count;
     }
@@ -62,4 +62,4 @@ extension ViewController : UIPickerViewDataSource {
 
 
 
-## 
+##  
